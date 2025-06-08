@@ -9004,7 +9004,7 @@ function BankItems_PopulateAccountBank(tab)
 						icon = icon or GetItemIcon(82800) --if peticon isn't returned set caged pet item texture
 					else
 						_, _, quality, _, _, _, _, _, _, icon = GetItemInfo(selfAccount[tab][i].link)
-						icon = icon or GetItemIconByID(selfAcount[tab][i].link)
+						icon = icon or GetItemIconByID(selfAccount[tab][i].link)
 						--if not icon then print(selfGuild[tab][i].link, GetItemInfo(selfGuild[tab][i].link)) end
 					end
 					if quality and (quality >= LE_ITEM_QUALITY_COMMON and BAG_ITEM_QUALITY_COLORS[quality]) then
